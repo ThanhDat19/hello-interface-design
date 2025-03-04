@@ -60,11 +60,6 @@
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
           </button>
-          <button class="nav-btn phone-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-            </svg>
-          </button>
         </div>
       </div>
       
@@ -77,24 +72,21 @@
         
         <!-- Main question area -->
         <div class="main-game-area">
-          <!-- Money/prize sidebar -->
+          <!-- Prize/questions sidebar -->
           <div class="prize-sidebar">
             <div class="prize-list">
-              <div class="prize-item active">15 <span>₫ 1.000.000</span></div>
-              <div class="prize-item">14 <span>₫ 500.000</span></div>
-              <div class="prize-item">13 <span>₫ 250.000</span></div>
-              <div class="prize-item">12 <span>₫ 125.000</span></div>
-              <div class="prize-item milestone">11 <span>₫ 64.000</span></div>
-              <div class="prize-item">10 <span>₫ 32.000</span></div>
-              <div class="prize-item">9 <span>₫ 16.000</span></div>
-              <div class="prize-item">8 <span>₫ 8.000</span></div>
-              <div class="prize-item">7 <span>₫ 4.000</span></div>
-              <div class="prize-item">6 <span>₫ 2.000</span></div>
-              <div class="prize-item milestone">5 <span>₫ 1.000</span></div>
-              <div class="prize-item">4 <span>₫ 500</span></div>
-              <div class="prize-item">3 <span>₫ 300</span></div>
-              <div class="prize-item">2 <span>₫ 200</span></div>
-              <div class="prize-item">1 <span>₫ 100</span></div>
+              <div class="prize-item">12</div>
+              <div class="prize-item">11 <span class="milestone-marker"></span></div>
+              <div class="prize-item">10</div>
+              <div class="prize-item">9</div>
+              <div class="prize-item">8</div>
+              <div class="prize-item">7</div>
+              <div class="prize-item">6</div>
+              <div class="prize-item">5 <span class="milestone-marker"></span></div>
+              <div class="prize-item">4</div>
+              <div class="prize-item">3</div>
+              <div class="prize-item">2</div>
+              <div class="prize-item active">1</div>
             </div>
           </div>
           
@@ -104,9 +96,9 @@
               <p id="questionText">Đâu là ngôn ngữ chính thức được sử dụng ở vương quốc Anh?</p>
             </div>
             
-            <div class="money-display">
-              <span>$</span>
-              <span id="currentMoney">0</span>
+            <div class="question-progress">
+              <span>Câu hỏi hiện tại:</span>
+              <span id="currentQuestion">1/12</span>
             </div>
             
             <div class="answers-grid">
@@ -189,6 +181,14 @@
             <label class="question-item">
               <input type="radio" name="question" value="10">
               <span>Câu 10</span>
+            </label>
+            <label class="question-item">
+              <input type="radio" name="question" value="11">
+              <span>Câu 11</span>
+            </label>
+            <label class="question-item">
+              <input type="radio" name="question" value="12">
+              <span>Câu 12</span>
             </label>
           </div>
         </div>
