@@ -19,4 +19,16 @@ class CardType extends Model
         'update_user_id',
         'update_date',
     ];
+
+    public function createUser() {
+        return $this->hasOne('App\Models\User', 'user_id', 'create_user_id');
+    }
+
+    public function updateUser() {
+        return $this->hasOne('App\Models\User', 'user_id', 'update_user_id');
+    }
+
+    public function cards() {
+        return $this->hasMany('App\Models\Card', 'card_type_id', 'card_type_id');
+    }
 }
